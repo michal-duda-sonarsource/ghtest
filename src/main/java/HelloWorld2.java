@@ -4,5 +4,8 @@ public class HelloWorld2 {
     System.out.println("abc");
     System.out.println("abc");
     System.out.println("abc");
+
+    System.out.println("abc");
+    System.out.println("abc");
   }
 }
