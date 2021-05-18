@@ -25,7 +25,7 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
     - name: Build with Maven
-      run: mvn -B clean package sonar:sonar
+      run: mvn -B clean package sonar:sonar -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }}
     - name: LS1
       run: ls -laR .
     - name: LS2
