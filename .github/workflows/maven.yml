@@ -25,7 +25,7 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -B clean package sonar:sonar
     - name: LS1
       run: ls -laR .
     - name: LS2
